@@ -19,8 +19,7 @@ def homepage():
 def prediction():
     f = request.files['file']
     placement = ramdon_forest_solo(f)
-
     return render_template('output.html', placement = placement)
 
 if __name__ == "__main__":
-    app.run(debug = True)
+    app.run(debug = True, port = 8080)

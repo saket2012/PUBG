@@ -14,7 +14,8 @@ def import_data(file, is_train):
 
 # feature_engineering function will process the training dataset. Processing includes
 # creating new features form existing ones, finding missing values, dropping unnecessary
-# columns from the dataset.
+# columns from the data
+# set.
 def feature_engineering(data_frame, is_train):
     data_frame = data_frame.loc[data_frame['matchType'] == 'solo']
     # Adding all travelling distances and created new feature
